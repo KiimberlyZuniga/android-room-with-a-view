@@ -58,6 +58,9 @@ class WordRepository {
     void update (Word word){
         new Update(mWordDao);
     }
+    void delete(Word word){
+        new Delete(mWordDao);
+    }
 
     private static class insertAsyncTask extends AsyncTask<Word, Void, Void> {
 
@@ -89,6 +92,19 @@ class WordRepository {
             }
 
         }
+    private static class Delete {
+        private WordDao Delete;
+
+        public Delete(WordDao mWordDao) {
+        }
+
+        public void Delete(WordDao word) {
+            final Object Update;
+
+            WordDao mAsyncTaskDao;
+        }
+
+    }
         }
 
 
